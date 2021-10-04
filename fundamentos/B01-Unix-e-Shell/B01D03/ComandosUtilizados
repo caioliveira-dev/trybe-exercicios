@@ -1,0 +1,52 @@
+######### Comandos utilizados Exercicios B01D03
+
+##Parte 1#####
+
+mkdir unix_tests
+cd unix_tests
+touch trybe.txt
+cp trybe.txt trybe_backup.txt
+mv trybe.txt tryberenomeado.txt
+mkdir backup
+mv trybe_backup.txt backup
+mkdir backup2
+mv backup/trybe_backup.txt backup2
+rmdir backup
+mv backup2 backup
+pwd
+ls
+rm -r backup
+ctrl + l -- clear
+cat > skills.txt
+Internet
+Unix
+Bash
+HTML
+CSS
+JavaScript
+React
+SQL
+ctrl+D
+head -5 skills.txt
+tail -4 skills.txt
+rm *.txt
+
+####Parte 2####
+
+curl -o countries.txt "https://gist.githubusercontent.com/kalinchernev/486393efcca01623b18d/raw/daa24c9fea66afb7d68f8d69f0c4b8eeb9406e83/countries"
+cat countries.txt
+less countries.txt
+less countries.txt  /Zambia
+less countries.txt  /Brazil
+grep -i 'brazil' countries.txt
+
+cat > phrases.txt
+grep -v 'fox' phrases.txt | wc -l
+wc -w phrases.txt
+wc -l phrases.txt
+touch empty.tbt
+touch empty.pdf
+ls
+ls *txt
+ls *t?t
+man ls
