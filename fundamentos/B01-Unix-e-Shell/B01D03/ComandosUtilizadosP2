@@ -1,0 +1,57 @@
+cat >  skills2.txt
+Internet
+Unix
+Bash
+^D
+cat >> skills2.txt
+Html
+Css
+JS
+node
+React
+^D
+wc -l skills2.txt
+sort skills2.txt | head -3 >top_skills.txt
+cat > phrases2.txt
+br é br
+comida brasileira
+uma frase sem
+dous donnuts
+br
+grep 'br' phrases2.txt | wc -l
+grep -v 'br' phrases2.txt | wc -l
+cat >> phrases2.txt
+Canada
+Australia
+^D
+cat phrases2.txt countries.txt > bunch_of_things.txt
+sort bunch_of_things | cat > bunch_of_things.txt
+
+###Parte 2 permissoes
+
+ls -l - ver permissoes
+chmod a+w bunch_of_things.txt
+ll
+chmod a-w bunch_of_things.txt
+ll
+chmod 644 bunch_of_things.txt
+
+###Parte 3 processos e jobs
+
+ps
+sleep 30&  (& - bg)
+ps ID 3137
+kill 3137 ou kill -9 3137
+sleep 30 ^Z
+bg %sleep
+sleep 300&
+sleep 200 ^Z
+sleep 100 ^Z
+ps
+fg %1
+^Z
+bg %3
+kill %sleep123
+
+
+
